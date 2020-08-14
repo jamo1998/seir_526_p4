@@ -13,16 +13,16 @@ redux and typescript can be implemented together
 4. Incorporating Redux with Typescript will be the biggest challenge, when you use redux with typescript you need to annotate the type of action being created, and annotate what the reducer will return when that action is called.
 
 # DAY 1
-On day one when the user is brought to the homepage, they will be able to get random todos (using json placeholder) and delete them.
+Setup my dev environment, get react, redux, and typescript boilerplate setup (redux store, interfaces, ect.) Create homepage
 
 # DAY 2
-On day two the user will be able to create and edit the todos they have made, once i get full functionality with no bugs I will get to styling!
+On day one when the user is brought to the homepage, they will be able to get random todos (using json placeholder) and delete them.
 
 # DAY 3
-Once app is fully styled and ready to DEMO I will start deploying the project and prepare my presentation
+On day two the user will be able to create and edit the todos they have made, once i get full functionality with no bugs I will get to styling!
 
 # DAY 4
-Present the project and graduate! Woot
+Once app is fully styled and ready to DEMO I will start deploying the project and prepare my presentation
 
 # Links
 https://wireframe.cc/5ATazx
