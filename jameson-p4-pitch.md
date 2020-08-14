@@ -18,5 +18,11 @@ On day one when the user is brought to the homepage, they will be able to get ra
 # DAY 2
 On day two the user will be able to create and edit the todos they have made, once i get full functionality with no bugs I will get to styling!
 
+# DAY 3
+Once app is fully styled and ready to DEMO I will start deploying the project and prepare my presentation
+
+# DAY 4
+Present the project and graduate! Woot
+
 # Links
 https://wireframe.cc/5ATazx
