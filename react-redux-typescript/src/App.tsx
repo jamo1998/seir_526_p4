@@ -2,8 +2,9 @@ import React from 'react';
 import { NewTodoInput } from './NewTodoInput';
 import { useSelector, useDispatch } from 'react-redux';
 import { TodoState } from './todoReducer';
-import { addTodo } from './actions';
+import { addTodo, deleteTodo } from './actions';
 import './App.css'
+
 
 function App() {
   const todos = useSelector<TodoState, TodoState["todos"]>((state) => state.todos)
@@ -11,6 +12,10 @@ function App() {
 
   const onAddTodo = (todo:string) => {
     dispatch(addTodo(todo))
+  }
+
+  const onDeleteTodo = (index:number) => {
+    dispatch(deleteTodo(index))
   }
 
   return (
@@ -23,7 +28,14 @@ function App() {
           <NewTodoInput addTodo={onAddTodo} />
           <ul>
             {todos.map((todo, index) => {
-              return <li className="todo" key={todo}>{index+1}. {todo}</li>
+              return (
+                <div>
+                  <li className="todo" key={todo}>
+                    {index+1}. {todo}
+                    <button onClick={() => onDeleteTodo(index)} className="btn red white-text delete-btn">X</button>
+                  </li>
+                </div>
+              );
             })}
           </ul>
         </div>

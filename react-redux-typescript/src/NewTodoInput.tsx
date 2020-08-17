@@ -1,4 +1,5 @@
 import React, { ChangeEvent } from 'react';
+import './App.css'
 
 interface NewTodoInputProps {
   addTodo(todo:string): void;
