@@ -1,4 +1,4 @@
-import { Action } from './actions'
+import { Action, ActionTypes } from './actions'
 
 export interface TodoState {
   todos: string[]
@@ -10,7 +10,7 @@ const initialState = {
 
 export const todoReducer = (state:TodoState = initialState, action: Action) => {
   switch(action.type) {
-    case "ADD_TODO": {
+    case ActionTypes.addTodo: {
       return {...state, todos: [...state.todos, action.payload]}
     }
     default:
