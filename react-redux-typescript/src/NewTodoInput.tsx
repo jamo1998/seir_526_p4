@@ -19,11 +19,10 @@ export const NewTodoInput:React.FC<NewTodoInputProps> = ({ addTodo }) => {
 
   return (
     <div>
-    <h1>What Next</h1>
     <input onChange={updateTodo} value={todo} type="text" name="todo" placeholder="Todo" />
     <br />
     <br />
-    <button onClick={onAddTodo} className="btn green">Add Todo</button>
+    <button onClick={onAddTodo} type="submit" className="btn green">Add Todo</button>
   </div>
   )
 };
